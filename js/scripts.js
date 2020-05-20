@@ -9,9 +9,11 @@ var tGreen = null;
 var tBlue = null;
 
 var paleta = null;
+var textRGB = null;
 
 function start() {
   paleta = document.querySelector('#paleta');
+  textRGB = document.querySelector('#textRGB');
 
   red = document.querySelector('#red');
   tRed = document.querySelector('#tRed');
@@ -44,6 +46,6 @@ function change(event) {
 }
 
 function render() {
-  paleta.style.background =
+  paleta.style.background = textRGB.textContent =
     'rgb(' + red.value + ', ' + green.value + ', ' + blue.value + ')';
 }

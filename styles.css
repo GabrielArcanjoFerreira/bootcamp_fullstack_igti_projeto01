@@ -1,18 +1,23 @@
-body {
-  padding: 25px;
+#cabecalho {
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(left, red, green, blue);
 }
 
 h2 {
   font-size: 25px;
-  font-weight: bold;
 }
 
 #principal,
-.conteiner_cor {
+.conteiner_cor,
+#result {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .conteiner_cor {
@@ -23,13 +28,19 @@ h2 {
   width: 60px;
 }
 
-.text {
+.text,
+.result {
   text-align: center;
 }
 
 #paleta {
-  border: 1px solid #9e9e9e;
   width: 200px;
   height: 200px;
-  margin-left: 20px;
+}
+
+#cabecalho,
+#paleta {
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(143, 143, 143, 1);
+  -moz-box-shadow: 0px 0px 7px 0px rgba(143, 143, 143, 1);
+  box-shadow: 0px 0px 7px 0px rgba(143, 143, 143, 1);
 }

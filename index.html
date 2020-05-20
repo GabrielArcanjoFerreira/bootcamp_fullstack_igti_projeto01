@@ -12,6 +12,10 @@
   </head>
   <body>
     <div id="principal">
+      <div class="header card-panel teal lighten-1" id="cabecalho">
+        <h1>RGB Selector</h1>
+      </div>
+
       <div id="conteiner_red" class="conteiner_cor">
         <h2 id="rotulo_red" class="rotulo">RED</h2>
         <input type="range" max="255" min="0" class="range" id="red" />
@@ -36,7 +40,10 @@
 
       <br /><br /><br />
 
-      <div id="paleta"></div>
+      <div id="result">
+        <div id="paleta"></div>
+        <h5 id="textRGB"></h5>
+      </div>
 
       <script src="./js/scripts.js"></script>
     </div>

@@ -3,26 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
     <link rel="stylesheet" href="./styles.css" />
     <title>Projeto 1 - BootCamp FullStack IGTI</title>
   </head>
   <body>
     <div id="principal">
-      <div id="rotulos">
-        <h2>(R) Vermelho:</h2>
-        <h2>(G) Verde:</h2>
-        <h2>(B) Azul:</h2>
-      </div>
-      <div id="ranges">
+      <div id="conteiner_red" class="conteiner_cor">
+        <h2 id="rotulo_red" class="rotulo">RED</h2>
         <input type="range" max="255" min="0" class="range" id="red" />
+        <div class="text-input">
+          <input type="text" disabled="true" class="text" id="tRed" />
+        </div>
+      </div>
+      <div id="conteiner_green" class="conteiner_cor">
+        <h2 id="rotulo_green" class="rotulo">GREEN</h2>
         <input type="range" max="255" min="0" class="range" id="green" />
+        <div class="text-input">
+          <input type="text" disabled="true" class="text" id="tGreen" />
+        </div>
+      </div>
+      <div id="conteiner_blue" class="conteiner_cor">
+        <h2 id="rotulo_blue" class="rotulo">BLUE</h2>
         <input type="range" max="255" min="0" class="range" id="blue" />
+        <div class="text-input">
+          <input type="text" disabled="true" class="text" id="tBlue" />
+        </div>
       </div>
-      <div id="text-inputs">
-        <input type="text" disabled="true" class="text" id="tRed" />
-        <input type="text" disabled="true" class="text" id="tGreen" />
-        <input type="text" disabled="true" class="text" id="tBlue" />
-      </div>
+
+      <br /><br /><br />
 
       <div id="paleta"></div>
 

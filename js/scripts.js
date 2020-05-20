@@ -28,24 +28,18 @@ function start() {
   blue.value = 0;
   tBlue.value = 0;
 
-  red.addEventListener('change', handleChangeRed);
-  green.addEventListener('change', handleChangeGreen);
-  blue.addEventListener('change', handleChangeBlue);
-
+  document.addEventListener('input', change);
   render();
 }
 
-function handleChangeRed(event) {
-  tRed.value = event.target.value;
-  render();
-}
-
-function handleChangeBlue(event) {
-  tBlue.value = event.target.value;
-  render();
-}
-function handleChangeGreen(event) {
-  tGreen.value = event.target.value;
+function change(event) {
+  if (event.target.id === 'red') {
+    tRed.value = event.target.value;
+  } else if (event.target.id === 'green') {
+    tGreen.value = event.target.value;
+  } else if (event.target.id === 'blue') {
+    tBlue.value = event.target.value;
+  }
   render();
 }
 
